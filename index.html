@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Schedule Page</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+    <script
+
+      src="https://kit.fontawesome.com/6644f3bee6.js"
+
+      crossorigin="anonymous"
+
+    ></script>
+
+    <style>
+
+      body {
+
+        margin: 0;
+
+        padding: 0;
+
+        background: black
+
+          url("https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/bg.jpg")
+
+          center 0 no-repeat;
+
+      }
+
+      .main {
+
+        width: 1000px;
+
+        margin: auto;
+
+      }
+
+      .header-img {
+
+        margin-top: 25px;
+
+        margin-bottom: 25px;
+
+        margin-left: 40px;
+
+      }
+
+      .header-slider {
+
+        padding-left: 40px;
+
+        height: 571px;
+
+        width: 100%;
+
+        background: url("https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/slider-bg.png")
+
+          0 0 no-repeat;
+
+      }
+
+      .header-slider img {
+
+        margin-top: 40px;
+
+      }
+
+      header ul {
+
+        list-style: none;
+
+        width: 90%;
+
+        margin-left: -30px;
+
+        display: flex;
+
+        justify-content: space-around;
+
+      }
+
+      header ul li a {
+
+        text-decoration: none;
+
+      }
+
+      .nav-links {
+
+        font-size: 40px;
+
+        line-height: 50px;
+
+        font-family: "Cabin Sketch", cursive;
+
+        text-transform: uppercase;
+
+        font-weight: bold;
+
+        letter-spacing: -2px;
+
+      }
+
+      .a1 {
+
+        color: #0072ff;
+
+      }
+
+      .a2 {
+
+        color: #00ae35;
+
+      }
+
+      .a3 {
+
+        color: #bfaf00;
+
+      }
+
+      .a4 {
+
+        color: #b30800;
+
+      }
+
+      .a5 {
+
+        color: #a400b3;
+
+      }
+
+      .nav-links:hover {
+
+        color: black;
+
+      }
+
+      .main-content {
+
+        display: flex;
+
+        margin-top: 40px;
+
+      }
+
+      .h1 {
+
+        padding-bottom: 6px;
+
+        margin-top: 40px;
+
+        font-size: 40px;
+
+        line-height: 50px;
+
+        color: #fff;
+
+        font-weight: bold;
+
+        font-family: "Cabin Sketch", cursive;
+
+        letter-spacing: -1px;
+
+      }
+
+      .btn-left {
+
+        position: absolute;
+
+        left: 17%;
+
+        top: 70%;
+
+        border: 0px;
+
+        background: transparent;
+
+        cursor: pointer;
+
+      }
+
+      .btn-right {
+
+        position: absolute;
+
+        right: 17%;
+
+        top: 70%;
+
+        border: 0px;
+
+        background: transparent;
+
+        cursor: pointer;
+
+      }
+
+      button:focus {
+
+        outline: none;
+
+      }
+
+      .main-right {
+
+        padding: 18px 30px 0 30px;
+
+        background-color: white;
+
+        flex: 2;
+
+        background-image: url("https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/block-1-shadow.png");
+
+      }
+
+      .h2 {
+
+        padding-bottom: 5px;
+
+        color: black;
+
+        font-size: 40px;
+
+        line-height: 50px;
+
+        font-weight: bold;
+
+        font-family: "Cabin Sketch", cursive;
+
+        letter-spacing: -1px;
+
+      }
+
+      .p1 {
+
+        padding-bottom: 7px;
+
+        font-size: 18px;
+
+        line-height: 25px;
+
+        color: #fff;
+
+        font-style: italic;
+
+      }
+
+      .p2 {
+
+        color: #838180;
+
+      }
+
+      .main-left {
+
+        padding-right: 20px;
+
+        flex: 1;
+
+      }
+
+      .p-link {
+
+        color: #dd0a00;
+
+        text-decoration: none;
+
+      }
+
+      .p-link:hover {
+
+        text-decoration: underline;
+
+      }
+
+      .read-link {
+
+        font-size: 30px;
+
+        line-height: 36px;
+
+        color: #0072ff;
+
+        font-weight: bold;
+
+        font-family: "Cabin Sketch", cursive;
+
+        letter-spacing: -1px;
+
+        text-decoration: none;
+
+      }
+
+      .read-link:hover {
+
+        color: red;
+
+      }
+
+      .read-more {
+
+        display: flex;
+
+        justify-content: center;
+
+      }
+
+      .footer {
+
+        position: relative;
+
+        overflow: hidden;
+
+        padding: 33px 0 30px 0;
+
+        background-color: black;
+
+      }
+
+      .footer-copy {
+
+        color: #838180;
+
+      }
+
+      .fp1 {
+
+        margin-left: 750px;
+
+      }
+
+      .fp2 {
+
+        margin-left: 700px;
+
+      }
+
+      .foot {
+
+        cursor: pointer;
+
+      }
+
+      .foot:hover {
+
+        text-decoration: underline;
+
+      }
+
+      table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+      }
+
+      td {
+
+        border-top: 1px solid black;
+
+      }
+
+      th {
+
+        text-align: left;
+
+      }
+
+      th,
+
+      td {
+
+        padding: 10px 0px;
+
+      }
+
+      .time {
+
+        font-size: 14px;
+
+      }
+
+      .red {
+
+        color: #b30800;
+
+      }
+
+      .event1,
+
+      .event2 {
+
+        display: flex;
+
+      }
+
+      .event11,
+
+      .event12,
+
+      .event21,
+
+      .event22 {
+
+        flex: 1;
+
+        padding-right: 40px;
+
+      }
+
+      header {
+
+        background: url("https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/header.jpg")
+
+          no-repeat top right;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <header>
+
+        <a href="">
+
+          <img
+
+            class="header-img"
+
+            src="https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/logo.png"
+
+            alt="Art School"
+
+          />
+
+        </a>
+
+        <div class="header-slider">
+
+          <img
+
+            class="header-slider-img"
+
+            src="https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/slider-1.jpg"
+
+            alt="Header Image"
+
+          />
+
+          <nav>
+
+            <ul>
+
+              <li><a class="nav-links a1" href="#">HOME</a></li>
+
+              <li><a class="nav-links a2" href="#">ABOUT</a></li>
+
+              <li>
+
+                <a style="color: black" class="nav-links a3" href="#"
+
+                  >SCHEDULE</a
+
+                >
+
+              </li>
+
+              <li><a class="nav-links a4" href="#">GALLERY</a></li>
+
+              <li>
+
+                <a class="nav-links a5" href="#">CONTACTS</a>
+
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+      </header>
+
+      <div class="main-content">
+
+        <div class="main-left">
+
+          <h2 class="h1">ABOUT SCHEDULE</h2>
+
+          <p class="p1">
+
+            At vero eos et accusam et justo duo dolores et ea rebum.
+
+          </p>
+
+          <p class="p2">
+
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+
+            dolor. Loremsum dolor sit amet, consetetur sadipscing elitr, sed
+
+            diam nonumy. Eirmod tempor invidunt ut labore et dolore magna
+
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+
+            sanctus est Lorem ipsum dolor sit amet
+
+            <a class="p-link" href="">More...</a>
+
+          </p>
+
+          <img
+
+            src="https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/content-img.png"
+
+            alt=""
+
+          />
+
+        </div>
+
+        <div class="main-right">
+
+          <h2 class="h2" style="margin: 0px">Schedule</h2>
+
+          <table>
+
+            <tr>
+
+              <th>Monday</th>
+
+              <th>Wednesday</th>
+
+              <th>Friday</th>
+
+              <th>Saturday</th>
+
+            </tr>
+
+            <tr>
+
+              <td>
+
+                <span class="time">11:00</span><br />
+
+                <span class="time red">Nam liber tempor</span> <br />
+
+                <span class="time">Peter Stanton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">11:00</span><br />
+
+                <span class="time red">Nam liber tempor</span> <br />
+
+                <span class="time">Peter Stanton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">11:00</span><br />
+
+                <span class="time red">Nam liber tempor</span> <br />
+
+                <span class="time">Peter Stanton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">11:00</span><br />
+
+                <span class="time red">Nam liber tempor</span> <br />
+
+                <span class="time">Peter Stanton</span>
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td>
+
+                <span class="time">13:00</span><br />
+
+                <span class="time red">Lorem ipsum</span> <br />
+
+                <span class="time">Helen Perton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">13:00</span><br />
+
+                <span class="time red">Lorem ipsum</span> <br />
+
+                <span class="time">Helen Perton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">13:00</span><br />
+
+                <span class="time red">Lorem ipsum</span> <br />
+
+                <span class="time">Helen Perton</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">13:00</span><br />
+
+                <span class="time red">Lorem ipsum</span> <br />
+
+                <span class="time">Helen Perton</span>
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td>
+
+                <span class="time">16:00</span><br />
+
+                <span class="time red">Dolor sit amet</span> <br />
+
+                <span class="time">Jesica Murray</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">16:00</span><br />
+
+                <span class="time red">Dolor sit amet</span> <br />
+
+                <span class="time">Jesica Murray</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">16:00</span><br />
+
+                <span class="time red">Dolor sit amet</span> <br />
+
+                <span class="time">Jesica Murray</span>
+
+              </td>
+
+              <td>
+
+                <span class="time">16:00</span><br />
+
+                <span class="time red">Dolor sit amet</span> <br />
+
+                <span class="time">Jesica Murray</span>
+
+              </td>
+
+            </tr>
+
+          </table>
+
+          <h2 class="h2" style="margin: 0px">Event Schedule</h2>
+
+          <div class="event1">
+
+            <div class="event11">
+
+              <p><strong>April 10, 2012</strong></p>
+
+              <p>
+
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+
+                esse molestie consequat, vel illum dolore
+
+                <a href="" class="p-link">More...</a>
+
+              </p>
+
+            </div>
+
+            <div class="event12">
+
+              <p><strong>April 04, 2012</strong></p>
+
+              <p>
+
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+
+                diam nonumy eirmod tempor invidunt ut labore
+
+                <a href="" class="p-link">More...</a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="event2">
+
+            <div class="event21">
+
+              <p><strong>March 22, 2012</strong></p>
+
+              <p>
+
+                Teugiat nulla facilisis at vero eros et accumsan et iusto odio
+
+                dignissim qui blandit praesent luptatum
+
+                <a href="" class="p-link">More...</a>
+
+              </p>
+
+            </div>
+
+            <div class="event22">
+
+              <p><strong>March 14, 2012</strong></p>
+
+              <p>
+
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet
+
+                clita kasd gubergren, no sea takimata sanctus
+
+                <a href="" class="p-link">More...</a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div style="padding: 22px; margin-top: 24px" class="read-more">
+
+            <a class="read-link" href="">MORE EVENTS</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <p class="footer-copy fp1">© 2012 Art School</p>
+
+      <p class="fp2">
+
+        <span class="foot" style="color: blue">Website</span>
+
+        <span class="footer-copy">by</span>
+
+        <span class="foot" style="color: red">Shahrukh Khan</span>
+
+      </p>
+
+    </div>
+
+    <button class="btn-left" onclick="decrease()">
+
+      <i class="fas fa-chevron-circle-left fa-2x"></i>
+
+    </button>
+
+    <button class="btn-right" onclick="increase()">
+
+      <i class="fas fa-chevron-circle-right fa-2x"></i>
+
+    </button>
+
+    <script>
+
+      i = 0;
+
+      const urls = [
+
+        "https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/slider-1.jpg",
+
+        "https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/slider-2.jpg",
+
+        "https://www.free-css.com/assets/files/free-css-templates/preview/page169/art-school/images/slider-3.jpg",
+
+      ];
+
+      const button1 = document.querySelector(".btn-left");
+
+      const button2 = document.querySelector(".btn-right");
+
+      const img = document.querySelector(".header-slider-img");
+
+      function increase() {
+
+        clearInterval(change);
+
+        i++;
+
+        if (i > 2) {
+
+          i = 0;
+
+        }
+
+        img.src = urls[i];
+
+        change = setInterval(increase, 2000);
+
+      }
+
+      function decrease() {
+
+        clearInterval(change);
+
+        i--;
+
+        if (i < 0) {
+
+          i = 2;
+
+        }
+
+        img.src = urls[i];
+
+        change = setInterval(increase, 2000);
+
+      }
+
+      let change = setInterval(increase, 2000);
+
+    </script>
+
+  </body>
+
+</html>
